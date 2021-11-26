@@ -49,10 +49,15 @@ $radio-bordes2-menu: 10px;
 }
 
 section{
+    display: none;    
     width: 95%;
     margin: 0 auto;
     .contenido{
+        background-color: #05094688;
         margin-top: 50px;
+        p{
+            color: white;
+        }
     }
     
 }

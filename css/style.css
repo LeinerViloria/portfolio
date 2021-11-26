@@ -32,12 +32,18 @@
 }
 
 section {
+  display: none;
   width: 95%;
   margin: 0 auto;
 }
 
 section .contenido {
+  background-color: #05094688;
   margin-top: 50px;
+}
+
+section .contenido p {
+  color: white;
 }
 
 @media screen and (max-width: 850px) {
