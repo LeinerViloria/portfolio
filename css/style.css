@@ -31,8 +31,40 @@
   border-bottom-left-radius: 10px;
 }
 
+.bienvenida {
+  width: 10%;
+  height: 90vh;
+  display: table-cell;
+  vertical-align: middle;
+  overflow: hidden;
+  background-color: #05094673;
+  border-radius: 80px;
+}
+
+.bienvenida .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.bienvenida .info h2 {
+  color: white;
+  font-size: 80px;
+}
+
+.bienvenida .info p {
+  font-size: 30px;
+}
+
 section {
-  display: none;
   width: 95%;
   margin: 0 auto;
 }

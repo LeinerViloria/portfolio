@@ -48,8 +48,31 @@ $radio-bordes2-menu: 10px;
     }
 }
 
-section{
-    display: none;    
+.bienvenida{
+    width: 10%;
+    height: 90vh; 
+    display: table-cell;     
+    vertical-align: middle;
+    overflow: hidden;
+    background-color: #05094673; 
+    border-radius: 80px;
+
+    .info{                                     
+        display: flex;        
+        justify-content: center;
+        flex-direction: column;                
+        text-align: center;        
+        h2{
+            color: white;
+            font-size: 80px;        
+        }
+        p{
+            font-size: 30px;        
+        }
+    }
+}
+
+section{     
     width: 95%;
     margin: 0 auto;
     .contenido{
