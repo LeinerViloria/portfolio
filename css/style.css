@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+.encabezado {
+  position: fixed;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 30px;
+}
+
+.encabezado .logo__div span {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+  letter-spacing: 3px;
+  display: block;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-shadow: 4px 2px 2px #9c9393, 1px 1px 0px #9c9393, 2px 2px 0px #9c9393;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.encabezado .logo__div span:hover {
+  cursor: pointer;
+  text-shadow: 0px 0px 0px #9c9393, -1px -1px 0px #9c9393, -2px -2px 0px #9c9393;
+}
+
+.encabezado .menu .lista .item:hover {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 10px;
+}
+
+section {
+  width: 95%;
+  margin: 0 auto;
+}
+
+section .contenido {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 850px) {
+  .menu {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
