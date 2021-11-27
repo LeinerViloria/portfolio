@@ -70,6 +70,7 @@ html {
   overflow: hidden;
   background-color: #05094673;
   border-radius: 80px;
+  z-index: 100;
 }
 
 .bienvenida .info {
@@ -93,6 +94,8 @@ html {
   height: 95vh;
   border-radius: 80px;
   margin-top: 15px;
+  overflow: hidden;
+  overflow-y: auto;
   background-color: #05094673;
 }
 
@@ -128,6 +131,87 @@ html {
 .bloqueContenido .infoPersonal img {
   border-radius: 200px;
   width: 100%;
+}
+
+.bloqueContenido .carousel {
+  height: 40vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px 20px;
+}
+
+.bloqueContenido .carousel h1 {
+  color: white;
+  font-size: 40px;
+  background: none;
+}
+
+.bloqueContenido .carousel .carousel__contenedor {
+  position: relative;
+  margin-top: calc(5% - 10px);
+}
+
+.bloqueContenido .carousel .carousel__contenedor .carousel__anterior, .bloqueContenido .carousel .carousel__contenedor .carousel__siguiente {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+  top: calc(60% - 35px);
+  cursor: pointer;
+  line-height: 30px;
+  text-align: center;
+  background-color: none;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+  opacity: 20%;
+}
+
+.bloqueContenido .carousel .carousel__contenedor .carousel__anterior:hover, .bloqueContenido .carousel .carousel__contenedor .carousel__siguiente:hover {
+  opacity: 100%;
+}
+
+.bloqueContenido .carousel .carousel__contenedor .carousel__anterior {
+  left: -35px;
+}
+
+.bloqueContenido .carousel .carousel__contenedor .carousel__siguiente {
+  right: -35px;
+}
+
+.bloqueContenido .carousel .carousel__contenedor .carousel__lista {
+  overflow: hidden;
+}
+
+.bloqueContenido .carousel .carousel__contenedor .carousel__lista .carousel__elementos {
+  text-align: center;
+  font-size: 18px;
+  padding: 10px 15px;
+}
+
+.bloqueContenido .carousel .carousel__contenedor .carousel__lista img {
+  width: 100%;
+}
+
+.bloqueContenido .carousel .carousel__indicadores .glider-dot {
+  display: block;
+  width: 30px;
+  height: 10px;
+  background-color: white;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  opacity: .2;
+  border-radius: 0;
+}
+
+.bloqueContenido .carousel .carousel__indicadores .glider-dot:hover {
+  opacity: .5;
+  border-radius: 3px;
+}
+
+.bloqueContenido .carousel .carousel__indicadores .glider-dot.active {
+  opacity: 1;
 }
 
 section {

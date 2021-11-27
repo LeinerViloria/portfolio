@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
+    <link rel="stylesheet" href="Glider.js-master/glider.min.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/style.css">    
     <script src="https://kit.fontawesome.com/d03e2748c2.js" crossorigin="anonymous"></script>
@@ -21,7 +22,7 @@
         <nav class="menu" id="menu">
             <ul class="lista">
                 <li class="listItem"><a class="item" href="#aboutMe"><i class="fab fa-grav"></i> | Sobre mi</a></li>
-                <li class="listItem"><a class="item" href="#"><i class="fas fa-laptop-code"></i> | Proyectos</a></li>
+                <li class="listItem"><a class="item" href="#projects"><i class="fas fa-laptop-code"></i> | Proyectos</a></li>
                 <li class="listItem">
                     <a class="item" href="#"><i class="fas fa-fire"></i> | Habilidades </a>                    
                 </li>
@@ -85,9 +86,49 @@
 
             <br>
 
-            <div class="row bloqueContenido">
-                <div class="col">
-                    
+            <div class="row bloqueContenido" id="projects">
+                <div class="col">                    
+                    <div class="carousel">
+                        <h1>Proyectos</h1>
+                        <div class="carousel__contenedor">
+                            <button aria-label="Anterior" class="carousel__anterior">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+
+                            <div class="carousel__lista">
+                                <div class="carousel__elementos">
+                                    <img src="img/foto_carousel.jpg" alt="Proyecto php">
+                                    <p>Proyecto web desarrollado con php</p>
+                                </div>
+                                <div class="carousel__elementos">
+                                    <img src="img/foto_carousel.jpg" alt="Proyecto php">
+                                    <p>Proyecto web desarrollado con php</p>
+                                </div>
+                                <div class="carousel__elementos">
+                                    <img src="img/foto_carousel.jpg" alt="Proyecto php">
+                                    <p>Proyecto web desarrollado con php</p>
+                                </div>
+                                <div class="carousel__elementos">
+                                    <img src="img/foto_carousel.jpg" alt="Proyecto php">
+                                    <p>Proyecto web desarrollado con php</p>
+                                </div>
+                                <div class="carousel__elementos">
+                                    <img src="img/foto_carousel.jpg" alt="Proyecto php">
+                                    <p>Proyecto web desarrollado con php</p>
+                                </div>
+                                <div class="carousel__elementos">
+                                    <img src="img/foto_carousel.jpg" alt="Proyecto php">
+                                    <p>Proyecto web desarrollado con php</p>
+                                </div>
+                            </div>
+
+                            <button aria-label="Siguiente" class="carousel__siguiente">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+
+                        <div role="tablist" class="carousel__indicadores"></div>
+                    </div>
                 </div>
             </div>
            
@@ -238,8 +279,10 @@
         </div>
     </section>    
 
+    <script src="Glider.js-master/glider.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>

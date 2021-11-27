@@ -76,6 +76,7 @@ html{
     overflow: hidden;
     background-color: #05094673; 
     border-radius: 80px;    
+    z-index: 100;
     .info{
         flex-direction: column; 
         h2{
@@ -94,6 +95,8 @@ html{
     height: 95vh; 
     border-radius: 80px;
     margin-top: 15px;
+    overflow: hidden;
+    overflow-y: auto;
     background-color: #05094673; 
 
     .info{
@@ -122,6 +125,83 @@ html{
             
         }
     }
+    
+    .carousel{        
+        height: 40vh;   
+        box-sizing: border-box;
+        padding: 20px 20px;  
+
+        h1{
+            color: white;
+            font-size: 40px;
+            background: none;
+        }
+
+        .carousel__contenedor{         
+            position: relative;
+            margin-top: calc(5% - 10px);
+
+            .carousel__anterior, .carousel__siguiente{
+                position: absolute;
+                display: block;
+                width: 30px;
+                height: 30px;
+                border-radius: 20px;
+                border: none;
+
+                top: calc(60% - 35px);
+
+                cursor: pointer;
+                line-height: 30px;
+                text-align: center;
+                background-color: none;
+                transition: all .6s;
+                opacity: 20%;
+            }  
+
+            .carousel__anterior:hover, .carousel__siguiente:hover{
+                opacity: 100%;
+            }
+            
+            .carousel__anterior{
+                left: -35px;
+            }
+
+            .carousel__siguiente{
+                right: -35px;
+            }
+
+            .carousel__lista{  
+                overflow: hidden;                 
+                .carousel__elementos{
+                    text-align: center;
+                    font-size: 18px;  
+                    padding: 10px 15px;                  
+                }           
+                img{
+                    width: 100%;                    
+                }   
+            }                                 
+        }
+        .carousel__indicadores .glider-dot{
+             display: block;
+             width: 30px;
+             height: 10px;
+             background-color: white;
+             transition: all .5s;
+             opacity: .2;
+             border-radius: 0;
+        }
+
+        .carousel__indicadores .glider-dot:hover{
+            opacity: .5;
+            border-radius: 3px;
+        }
+
+        .carousel__indicadores .glider-dot.active{
+            opacity: 1;
+        }
+    }    
 }
 
 section{     
