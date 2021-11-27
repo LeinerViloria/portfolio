@@ -91,13 +91,16 @@ html{
 }
 
 .bloqueContenido{
-    width: 100%;
-    height: 95vh; 
+    width: 100%;    
     border-radius: 80px;
     margin-top: 15px;
     overflow: hidden;
     overflow-y: auto;
     background-color: #05094673; 
+
+    .bienvenida{
+        height: 95vh!important; 
+    }
 
     .info{
         flex-direction: row;   
@@ -128,6 +131,7 @@ html{
     
     .carousel{        
         height: 40vh;   
+        margin-top: -65px;
         box-sizing: border-box;
         padding: 20px 20px;  
 

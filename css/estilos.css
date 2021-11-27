@@ -144,6 +144,12 @@ a{
     .listItem .slide li:hover > ul{
         display: none;
     }
+    .descripcion{
+        width: 50%!important;
+    }
+    .descripcion .cuentas ul li{
+        padding: 0px !important;
+    }
 }
 
 @media screen and (max-width:380px) {
