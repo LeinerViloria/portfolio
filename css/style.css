@@ -103,6 +103,17 @@ html {
           flex-direction: row;
 }
 
+.aboutMe .info .input-personal {
+  margin-top: 30px;
+}
+
+.aboutMe .info .input-personal p {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px 20px;
+  font-size: 15px;
+}
+
 .aboutMe .infoPersonal {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
