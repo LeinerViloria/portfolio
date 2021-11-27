@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 .encabezado {
   position: fixed;
   border-top-left-radius: 10px;
@@ -31,6 +35,33 @@
   border-bottom-left-radius: 10px;
 }
 
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.row .col {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 60px 30px;
+}
+
 .bienvenida {
   width: 10%;
   height: 90vh;
@@ -42,17 +73,10 @@
 }
 
 .bienvenida .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
 }
 
 .bienvenida .info h2 {
@@ -62,6 +86,37 @@
 
 .bienvenida .info p {
   font-size: 30px;
+}
+
+.aboutMe {
+  width: 100%;
+  height: 95vh;
+  border-radius: 80px;
+  margin-top: 15px;
+  background-color: #05094673;
+}
+
+.aboutMe .info {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.aboutMe .infoPersonal {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 300px;
+  width: 250px;
+  height: 350px;
+  overflow: hidden;
+  background-color: white;
+  border: 1px dotted black;
+}
+
+.aboutMe .infoPersonal img {
+  border-radius: 200px;
+  width: 100%;
 }
 
 section {
@@ -76,6 +131,91 @@ section .contenido {
 
 section .contenido p {
   color: white;
+}
+
+.descripcion .desc {
+  border: 1px solid white;
+  border-radius: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 30px 20px;
+  min-height: 150px;
+  max-height: 50vh;
+  font-size: 20px;
+  overflow: hidden;
+  overflow-y: auto;
+  text-align: center;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+}
+
+.descripcion .desc:hover {
+  background-color: #050946b4;
+}
+
+.descripcion .btn-cv {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+}
+
+.descripcion .btn-cv button {
+  padding: 15px 40px;
+  border-radius: 15px;
+  font-size: 18px;
+  color: white;
+  border: none;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+  background-color: rgba(52, 47, 122, 0.726);
+  text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.493), 1px 1px 0px rgba(0, 0, 0, 0.493), 0px 0px 0px rgba(0, 0, 0, 0.493);
+}
+
+.descripcion .btn-cv button:hover {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.descripcion .cuentas ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.descripcion .cuentas ul li {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px 30px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  border-radius: 30px;
+}
+
+.descripcion .cuentas ul li a {
+  color: white;
+  font-size: 35px;
+}
+
+.descripcion .cuentas ul li a img {
+  width: 70px;
+}
+
+.descripcion .cuentas ul li:hover {
+  border-radius: 40px;
+  background-color: rgba(184, 214, 204, 0.185);
 }
 
 @media screen and (max-width: 850px) {

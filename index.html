@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">    
     <script src="https://kit.fontawesome.com/d03e2748c2.js" crossorigin="anonymous"></script>
 </head>
 
@@ -20,7 +20,7 @@
         </div>
         <nav class="menu" id="menu">
             <ul class="lista">
-                <li class="listItem"><a class="item" href="#"><i class="fab fa-grav"></i> | Sobre mi</a></li>
+                <li class="listItem"><a class="item" href="#aboutMe"><i class="fab fa-grav"></i> | Sobre mi</a></li>
                 <li class="listItem"><a class="item" href="#"><i class="fas fa-laptop-code"></i> | Proyectos</a></li>
                 <li class="listItem">
                     <a class="item" href="#"><i class="fas fa-fire"></i> | Habilidades </a>                    
@@ -34,14 +34,55 @@
     </header>
  
     <section>
-        <div class="contenido">
-            <div class="bienvenida">
-                <div class="info">
+        <div class="container contenido">
+            <div class="bienvenida" id="bienvenida">
+                <div class="col info">
                     <h2>Desarrollador Back-End</h2>
                     <p>1 año de experiencia en proyectos de pequeña escala</p>
                     <p><i>Universitario</i></p>
                 </div>
-            </div>
+            </div>  
+
+            <br>
+
+            <div class="row aboutMe" id="aboutMe">
+                <div class="col info">
+                    <div class="informacion">
+                        <div class="infoPersonal foto">
+                            <img src="img/foto.jpg" alt="Leiner Viloria">
+                        </div> 
+                        <br><br><!--De momento asi-->
+                        <div class="input-personal">
+                            <p>Leiner Javier Viloria Genes</p>
+                            <p>19 Años</p>
+                            <p>Estudiante de ingenieria de sistemas</p>
+                        </div>                                             
+                    </div>                   
+                </div>                  
+                <div class="col descripcion">
+                    <div class="desc">
+                        <p>
+                            Soy estudiante de ingenieria de sistemas en quinto semestre.                           
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus id perferendis laboriosam eum? Aliquam
+                            excepturi explicabo magni necessitatibus eaque commodi, ipsum quam sint corrupti, sit ducimus. Repellendus
+                            natus, lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus id perferendis laboriosam eum? Aliquam
+                            excepturi explicabo magni necessitatibus eaque commodi, ipsum quam sint corrupti, sit ducimus. Repellendus
+                            natus. 
+                        </p>
+                    </div>
+                    <div class="btn-cv">
+                        <button>Descargar CV</button>                        
+                    </div>
+                    <div class="cuentas">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-github"></i></a></li>
+                            <li><a href="#"><img src="img/upwork.png" alt="Upwork"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>  
+           
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus id perferendis laboriosam eum? Aliquam
                 excepturi explicabo magni necessitatibus eaque commodi, ipsum quam sint corrupti, sit ducimus. Repellendus
                 natus, ipsam minus sint enim, nisi consequuntur omnis aliquid nobis hic et quas necessitatibus recusandae
@@ -187,8 +228,7 @@
                 iure aspernatur. Id culpa, asperiores quibusdam a rerum sed corporis autem amet saepe officiis animi magni
                 quae modi?</p>
         </div>
-    </section>
-
+    </section>    
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/main.js"></script>
