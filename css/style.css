@@ -88,7 +88,7 @@ html {
   font-size: 30px;
 }
 
-.aboutMe {
+.bloqueContenido {
   width: 100%;
   height: 95vh;
   border-radius: 80px;
@@ -96,25 +96,25 @@ html {
   background-color: #05094673;
 }
 
-.aboutMe .info {
+.bloqueContenido .info {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
 }
 
-.aboutMe .info .input-personal {
+.bloqueContenido .info .input-personal {
   margin-top: 30px;
 }
 
-.aboutMe .info .input-personal p {
+.bloqueContenido .info .input-personal p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 15px 20px;
   font-size: 15px;
 }
 
-.aboutMe .infoPersonal {
+.bloqueContenido .infoPersonal {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 300px;
@@ -125,7 +125,7 @@ html {
   border: 1px dotted black;
 }
 
-.aboutMe .infoPersonal img {
+.bloqueContenido .infoPersonal img {
   border-radius: 200px;
   width: 100%;
 }
