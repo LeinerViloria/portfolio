@@ -100,6 +100,7 @@ html {
 
 .bloqueContenido .bienvenida {
   height: 95vh !important;
+  overflow: auto;
 }
 
 .bloqueContenido .info {
@@ -315,6 +316,36 @@ section .contenido p {
 .descripcion .cuentas ul li:hover {
   border-radius: 40px;
   background-color: rgba(184, 214, 204, 0.185);
+}
+
+@media screen and (max-width: 260px) {
+  .bienvenida .info h2 {
+    font-size: 40px !important;
+  }
+  .bienvenida .info p {
+    font-size: 25px !important;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .bienvenida .info h2 {
+    font-size: 60px;
+  }
+  .bienvenida .info p {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 655px) {
+  .contenido_responsive {
+    display: block;
+  }
+  .descripcion {
+    width: 100% !important;
+  }
+  section {
+    width: 150%;
+  }
 }
 
 @media screen and (max-width: 850px) {

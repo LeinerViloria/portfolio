@@ -100,6 +100,7 @@ html{
 
     .bienvenida{
         height: 95vh!important; 
+        overflow: auto;
     }
 
     .info{
@@ -291,6 +292,45 @@ section{
             }
         }
     }
+}
+
+@media screen and (max-width:260px){
+    .bienvenida{
+        .info{
+            h2{
+                font-size: 40px!important;
+            }
+            p{
+                font-size: 25px!important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:380px){
+    .bienvenida{
+        .info{
+            h2{
+                font-size: 60px;
+            }
+            p{
+                font-size: 35px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:655px){
+    .contenido_responsive{
+        display: block;
+    }
+    .descripcion{
+        width: 100%!important;
+    }
+    section{
+        width: 150%;
+    }
+    
 }
 
 @media screen and (max-width:850px){
