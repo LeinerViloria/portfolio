@@ -76,7 +76,6 @@ html{
     overflow: hidden;
     background-color: #05094673; 
     border-radius: 80px;    
-    z-index: 100;
     .info{
         flex-direction: column; 
         h2{
@@ -302,6 +301,19 @@ section{
             }
             p{
                 font-size: 25px!important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:200px){
+    .bienvenida{
+        .info{
+            h2{
+                font-size: 30px!important;
+            }
+            p{
+                font-size: 15px!important;
             }
         }
     }

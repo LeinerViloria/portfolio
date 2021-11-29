@@ -70,7 +70,6 @@ html {
   overflow: hidden;
   background-color: #05094673;
   border-radius: 80px;
-  z-index: 100;
 }
 
 .bienvenida .info {
@@ -324,6 +323,15 @@ section .contenido p {
   }
   .bienvenida .info p {
     font-size: 25px !important;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  .bienvenida .info h2 {
+    font-size: 30px !important;
+  }
+  .bienvenida .info p {
+    font-size: 15px !important;
   }
 }
 
