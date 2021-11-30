@@ -138,7 +138,6 @@ html {
 
 .bloqueContenido .carousel {
   height: 40vh;
-  margin-top: -65px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 20px 20px;
@@ -252,36 +251,6 @@ section .contenido p {
   background-color: #050946b4;
 }
 
-.descripcion .btn-cv {
-  margin-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 100%;
-}
-
-.descripcion .btn-cv button {
-  padding: 15px 40px;
-  border-radius: 15px;
-  font-size: 18px;
-  color: white;
-  border: none;
-  -webkit-transition: all .6s;
-  transition: all .6s;
-  background-color: rgba(52, 47, 122, 0.726);
-  text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.493), 1px 1px 0px rgba(0, 0, 0, 0.493), 0px 0px 0px rgba(0, 0, 0, 0.493);
-}
-
-.descripcion .btn-cv button:hover {
-  font-size: 20px;
-  cursor: pointer;
-}
-
 .descripcion .cuentas ul {
   list-style: none;
   display: -webkit-box;
@@ -317,6 +286,59 @@ section .contenido p {
   background-color: rgba(184, 214, 204, 0.185);
 }
 
+.btn-cv {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+}
+
+.btn-cv button {
+  padding: 15px 40px;
+  border-radius: 15px;
+  font-size: 18px;
+  color: white;
+  border: none;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+  background-color: rgba(52, 47, 122, 0.726);
+  text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.493), 1px 1px 0px rgba(0, 0, 0, 0.493), 0px 0px 0px rgba(0, 0, 0, 0.493);
+}
+
+.btn-cv button:hover {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.formulario form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.493), 1px 1px 0px rgba(0, 0, 0, 0.493), 0px 0px 0px rgba(0, 0, 0, 0.493);
+}
+
+.formulario form input, .formulario form textarea {
+  padding: 10px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  resize: none;
+}
+
 @media screen and (max-width: 260px) {
   .bienvenida .info h2 {
     font-size: 40px !important;
@@ -333,6 +355,33 @@ section .contenido p {
   .bienvenida .info p {
     font-size: 15px !important;
   }
+}
+
+.bloqueGraficos {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
+.bloqueGraficos h1 {
+  background: none;
+  font-size: 40px;
+  color: white;
+}
+
+.bloqueGraficos canvas {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  background-color: rgba(14, 24, 43, 0.534);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 30px;
 }
 
 @media screen and (max-width: 380px) {

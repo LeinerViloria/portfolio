@@ -131,7 +131,6 @@ html{
     
     .carousel{        
         height: 40vh;   
-        margin-top: -65px;
         box-sizing: border-box;
         padding: 20px 20px;  
 
@@ -238,31 +237,7 @@ section{
 
     .desc:hover{
         background-color: #050946b4;
-    }
-
-    .btn-cv{
-        margin-top: 20px;
-        display: flex;        
-        justify-content: center;
-        box-sizing: border-box;        
-        width: 100%;        
-
-        button{
-            padding: 15px 40px;
-            border-radius: 15px;
-            font-size: 18px;
-            color: white;
-            border: none;
-            transition: all .6s;
-            background-color: rgba(52, 47, 122, 0.726);
-            text-shadow: .5px .5px 2px rgba(0, 0, 0, 0.493), 1px 1px 0px rgba(0, 0, 0, 0.493), 0px 0px 0px rgba(0, 0, 0, 0.493);
-        }
-
-        button:hover{
-            font-size: 20px;
-            cursor: pointer;
-        }
-    }
+    }    
 
     .cuentas{
         ul{
@@ -293,6 +268,47 @@ section{
     }
 }
 
+.btn-cv{
+    margin-top: 20px;
+    display: flex;        
+    justify-content: center;
+    box-sizing: border-box;        
+    width: 100%;        
+
+    button{
+        padding: 15px 40px;
+        border-radius: 15px;
+        font-size: 18px;
+        color: white;
+        border: none;
+        transition: all .6s;
+        background-color: rgba(52, 47, 122, 0.726);
+        text-shadow: .5px .5px 2px rgba(0, 0, 0, 0.493), 1px 1px 0px rgba(0, 0, 0, 0.493), 0px 0px 0px rgba(0, 0, 0, 0.493);
+    }
+
+    button:hover{
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+
+.formulario{    
+    form{                      
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        text-shadow: .5px .5px 2px rgba(0, 0, 0, 0.493), 1px 1px 0px rgba(0, 0, 0, 0.493), 0px 0px 0px rgba(0, 0, 0, 0.493);
+
+        input, textarea{
+            padding: 10px 20px;
+            box-sizing: border-box;
+            border-radius: 10px;        
+            resize: none;    
+        }
+    }
+}
+
 @media screen and (max-width:260px){
     .bienvenida{
         .info{
@@ -316,6 +332,32 @@ section{
                 font-size: 15px!important;
             }
         }
+    }
+}
+
+.bloqueGraficos{
+    //width: 50%;
+    //display: flex;
+    //flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+
+    h1{
+        background: none;
+        font-size: 40px;
+        color: white;
+    }
+    canvas{
+        box-sizing: border-box;
+        padding: 10px 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;        
+        background-color: rgba(14, 24, 43, 0.534); 
+        border-top-left-radius: $radio-bordes2-menu;
+        border-top-right-radius: $radio-bordes-menu;
+        border-bottom-right-radius: $radio-bordes2-menu;
+        border-bottom-left-radius: $radio-bordes-menu;
     }
 }
 
